@@ -3,14 +3,20 @@ close all;
 f = figure();
 ax = axes();
 
-cam = webcam();
-cam.Resolution = '320x240';
+cam = webcam("/dev/video4");
+cam.Resolution = '1920x1080';
 x = 1;
 
 
 while true
    current_frame = snapshot(cam);
    current_frame_grayscale = rgb2gray(current_frame);
+
+   kernel = [1, 0, 0;
+       1, -4, 1;
+       0, 1,0];
+    current_frame_grayscale = conv2(current_frame_grayscale, kernel, 'same');
+
    [cornerPoints, boardSize] = detectCheckerboardPoints(current_frame_grayscale);
    
    if isempty(cornerPoints)

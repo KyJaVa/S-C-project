@@ -3,8 +3,8 @@ close all;
 f = figure();
 ax = axes();
 
-cam = webcam("/dev/video4");
-cam.Resolution = '1920x1080';
+cam = webcam();
+cam.Resolution = '320x240';
 x = 1;
 
 

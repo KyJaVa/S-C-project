@@ -4,7 +4,7 @@ f = figure();
 ax = axes();
 
 cam = webcam();
-cam.Resolution = '320x240';
+cam.Resolution = '1920x1080';
 x = 1;
 
 

@@ -1,4 +1,4 @@
-clear all;
+clear all; %#ok<CLALL>
 close all;
 
 %Webcam setup
@@ -25,9 +25,12 @@ while true
         hold on;
         plot(cornerPoints);
         hold off;
+
+        %imshow(frame);
+
     else
         disp('Checkerboard not found.');
     end
-    
+
     clf;
 end

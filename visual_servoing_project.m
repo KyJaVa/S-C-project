@@ -1,7 +1,7 @@
+
+%% Initialisations of variables and objects
 clear all;
 close all;
-%% Initialisations of variables and objects
-
 % init figure 1 and axes
 f1 = figure('Position', [100, 100, 750, 500]);
 ax1 = axes();
@@ -43,7 +43,6 @@ mean_error = 0;
 v_c = zeros(6,1);
 current_error = 0;
 i = 1;
-
 %% Main processing loop
 while true
   try

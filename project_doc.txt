@@ -1,0 +1,10 @@
+This project lives on the VCS link: https://github.com/KyJaVa/S-C-project
+
+The individual contribution was even across all aspects of the project, from coding to presentations to documentation:
+
+Kian Seyed-Sajjadi: 33%
+Jaydie Minter: 33%
+Kyle Visage: 33%
+
+
+This was due to the pair programming utilised to write the code, as well as even contribution to the presentation segments

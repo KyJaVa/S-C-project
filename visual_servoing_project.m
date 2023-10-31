@@ -170,8 +170,10 @@ function s = calculate_s(m, a)
   s = zeros(numel(m),1);
 
   for i = 1:size(m, 1)/2 
-    s(2*i - 1) = (m(2*i - 1) - a(1))/a(3); x coords
-    s(2*i) = (m(2*i) - a(2))/a(4); y coords
+    % x coords
+    s(2*i - 1) = (m(2*i - 1) - a(1))/a(3);
+    % y coords
+    s(2*i) = (m(2*i) - a(2))/a(4);
   end
 end
 
